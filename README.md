@@ -80,9 +80,13 @@ docker run -it -d -p 8080:8080 docker.io/vincentkai/jib-practice
 
 9. 最後我們可以到瀏覽器輸入 http://localhost:8080/ 看看有沒有正常運作。
 
+
+
 ## Conclusion
 
 這樣就完成了使用 JIB 來打包我們的專案成 docker image，並且推送到 docker hub 上，實在是很方便，不用再撰寫 Dockerfile，只需要在 pom.xml 中設定一下就可以了，希望這篇文章對你有幫助，謝謝你的閱讀。
+
+我把我的案例放在 [github](https://github.com/mister33221/spring-boot-jib-practice.git) 上，有興趣的可以參考一下。
 
 ## Reference
 
