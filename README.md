@@ -1,5 +1,11 @@
 # JIB
 
+- [JIB](#jib)
+    - [Make your hands dirty](#make-your-hands-dirty)
+    - [Conclusion](#conclusion)
+    - [Reference](#reference)
+
+
 最近公司在使用 JIB 构建 docker 镜像，我之前也沒聽過這個東西，不過可以一件打包成 imgae 並且推到指定的 repository，實在是很方便。
 
 這樣就可以省去撰寫 Dockerfile 的麻煩， JIB 是一個專門用來構建 Docker 鏡像的工具，它可以將 Java 應用程序打包成 Docker 鏡像，還可以直接將 Docker 鏡像直接推到指定的 repository 去，實在很方便。 JIB 支持 Maven 和 Gradle，那我們就來玩玩看吧!
@@ -80,13 +86,11 @@ docker run -it -d -p 8080:8080 docker.io/vincentkai/jib-practice
 
 9. 最後我們可以到瀏覽器輸入 http://localhost:8080/ 看看有沒有正常運作。
 
-
-
 ## Conclusion
 
 這樣就完成了使用 JIB 來打包我們的專案成 docker image，並且推送到 docker hub 上，實在是很方便，不用再撰寫 Dockerfile，只需要在 pom.xml 中設定一下就可以了，希望這篇文章對你有幫助，謝謝你的閱讀。
 
-我把我的案例放在 [github](https://github.com/mister33221/spring-boot-jib-practice.git) 上，有興趣的可以參考一下。
+我把我的專案放在 [github](https://github.com/mister33221/spring-boot-jib-practice.git) 上，有興趣的可以去看看。
 
 ## Reference
 
